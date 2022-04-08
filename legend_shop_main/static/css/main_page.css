@@ -1,0 +1,55 @@
+.my{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	float: left;
+	width: 100%;
+	
+
+}
+
+
+
+.my_card{
+	margin-bottom: 40px;
+}
+
+#pic_n_text{
+	float: left;
+	width: 100%;
+	padding-bottom: 50px;
+	padding-top: 30px;
+	background: white;
+}
+
+#text{
+	width: 50%;
+	word-wrap: break-word;
+	padding: 30px;
+	float: left;
+	/*font-size: 1.5em;*/
+}
+
+#picture{
+	width: 50%;
+	float: left;
+	padding: 30px;
+	text-align: center;
+
+}
+#margin{
+	
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+#assortment{
+	/*text-align: center;*/
+	float: left;
+	width: 90%;
+	margin: 10px 0 50px 100px
+}
+h5{
+	/*font-weight: bold;*/
+}

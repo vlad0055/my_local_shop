@@ -1,0 +1,64 @@
+{%extends "legend_shop_main/base.html"%}
+{%load static%}
+
+
+{%block styles%}
+<link rel="stylesheet" href="{% static 'css/main_page.css' %}">
+
+{%endblock%}
+
+{%block content%}
+<div id="pic_n_text" class="container-fluid">
+	
+
+	<div id="text">
+		<p>Добро пожаловать!</p>
+		<p>Наш магазин находится на улице Кирова. В центре города. Будете рядом - заходите!</p>
+	</div>
+
+	<div id="picture">
+		<img src="{%static 'pictures/shop.jpg'%}" alt="" width="70%">
+	</div>
+
+</div>
+
+<div id="assortment">
+ <h3>Что можно у нас купить?</h3>
+</div>
+<div id="margin">
+	<div class=" container-fluid my">
+
+			
+		
+		{% if product %}
+		    
+		    	
+		      		{% for item in product %}
+		      			
+		      				<!-- <div class="my_card">
+							    <h5>{{item.name}}</h5>
+							    <p>{{item.text}}</p>
+							  
+							</div> -->
+		      				<div class="card my_card" style="width: 18rem;">
+							  <img src="{{ item.picture.url}}" class="card-img-top" alt="...">
+							  <div class="card-body">
+							    <h5 class="card-title">{{item.name}}</h5>
+							    <p class="card-text">{{item.text}}</p>
+							    <a href="#" class="btn btn-primary">Подробнее</a>
+							  </div>
+							</div>
+		     		 {% endfor %}
+				
+		   
+				
+		    
+		    {% else %}
+		      <p>There is no products.</p>
+		    {% endif %}
+	</div>
+</div>
+		
+
+{%endblock%}
+
